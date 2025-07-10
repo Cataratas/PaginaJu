@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Programa de Corrida para Mulheres</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="logo">
+    <img src="logo-clube.png" alt="Logo" />
+  </div>
+  <div class="intro">
+    <div class="intro-photo">
+      <img src="assets/ju.png" alt="Minha Foto" />
+      <div class="mobile-divider"></div>
+    </div>
+    <div class="intro-text">
+      <h1>Programa de Corrida para Mulheres</h1>
+      <p>Olá! Eu sou a Juliane Flores, treinadora de corrida com mais de 11 anos de experiência ajudando mulheres a criarem o hábito da corrida de forma saudável, motivadora e segura. Minha missão é mostrar que toda mulher pode correr — no seu ritmo, respeitando seu corpo, e se sentindo poderosa a cada conquista.</p>
+      <a href="#final" class="cta-button">Dê o seu primeiro passo</a>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+  <section class="section">
+    <h2>Para quem é essa planilha?</h2>
+    <div class="benefits">
+      <ul>
+        <li>Mulheres que desejam começar a correr do zero</li>
+        <li>Quem busca emagrecimento saudável com constância</li>
+        <li>Mulheres que já correm e querem melhorar tempo e resistência</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>O que você vai receber:</h2>
+    <div class="benefits">
+      <ul>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Por que essa planilha é diferente?</h2>
+    <div class="benefits">
+      <ul>
+        <li>Feita para o corpo e rotina da mulher</li>
+        <li>Sem fórmulas mágicas — método comprovado</li>
+        <li>Mais de 11 anos de experiência com alunas</li>
+        <li>Funciona tanto na esteira quanto na rua</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section testimonials">
+    <h2>O que dizem as minhas alunas</h2>
+    <p><em>"Achei que correr não era pra mim, mas hoje faço 5km sorrindo!"</em> — Amanda R.</p>
+    <p><em>"Finalmente encontrei um plano que respeita meu ritmo!"</em> — Maria S.</p>
+  </section>
+
+  <section class="section testimonials-carousel">
+    <h2>Veja quem já corre com a gente 🏃‍♀️</h2>
+
+    <div class="carousel-wrapper">
+      <button class="nav-button left" id="prevBtn" aria-label="Anterior">
+        <svg viewBox="0 0 24 24">
+          <polyline points="15 6 9 12 15 18" />
+        </svg>
+      </button>
+
+      <div class="testimonial-track" id="testimonial-track">
+        <div class="testimonial-card">
+          <img src="assets/aluna1.jpg" alt="Amanda" />
+          <p><strong>Juliana R.</strong></p>
+          <p>“Achei que correr não era pra mim, mas hoje faço 5km sorrindo!”</p>
+        </div>
+        <div class="testimonial-card">
+          <img src="assets/aluna2.jpg" alt="Maria Eduarda" />
+          <p><strong>Marina C.</strong></p>
+          <p>“Finalmente encontrei um plano que respeita meu ritmo!”</p>
+        </div>
+        <div class="testimonial-card">
+          <img src="assets/aluna3.jpg" alt="Gabriela" />
+          <p><strong>Camila S.</strong></p>
+          <p>“Nunca imaginei que fosse conseguir correr 3x por semana!”</p>
+        </div>
+        <div class="testimonial-card">
+          <img src="aluna3.jpg" alt="Anna" />
+          <p><strong>Camila S.</strong></p>
+          <p>“Nunca imaginei que fosse conseguir correr 3x por semana!”</p>
+        </div>
+        <div class="testimonial-card">
+          <img src="aluna3.jpg" alt="Camila" />
+          <p><strong>Camila S.</strong></p>
+          <p>“Nunca imaginei que fosse conseguir correr 3x por semana!”</p>
+        </div>
+        <div class="testimonial-card">
+          <img src="aluna3.jpg" alt="Camila" />
+          <p><strong>Camila S.</strong></p>
+          <p>“Nunca imaginei que fosse conseguir correr 3x por semana!”</p>
+        </div>
+        <div class="testimonial-card">
+          <img src="aluna3.jpg" alt="Camila" />
+          <p><strong>Camila S.</strong></p>
+          <p>“Nunca imaginei que fosse conseguir correr 3x por semana!”</p>
+        </div>
+      </div>
+
+      <button class="nav-button right" id="nextBtn" aria-label="Próximo">
+        <svg viewBox="0 0 24 24">
+          <path d="M9 6l6 6-6 6" />
+        </svg>
+      </button>
+    </div>
+
+    <div class="carousel-indicators" id="carousel-indicators"></div>
+  </section>
+
+  <a href="#" class="cta-button">QUERO MINHA PLANILHA AGORA</a>
+
+  <section class="section faq">
+    <h2>Dúvidas Frequentes</h2>
+    <p><strong>Preciso ter experiência com corrida?</strong> Não! A planilha tem versões para todos os níveis.</p>
+    <p><strong>Funciona na esteira?</strong> Sim, o plano é totalmente adaptável.</p>
+  </section>
+</main>
+
+<div id="final"></div>
+<footer>
+  &copy; 2025 - Programa de Corrida para Mulheres. Todos os direitos reservados
+</footer>
+
+<script>
+  const track = document.getElementById('testimonial-track');
+  const indicators = document.getElementById('carousel-indicators');
+  const cards = track.querySelectorAll('.testimonial-card');
+  const prevBtn = document.getElementById('prevBtn');
+  const nextBtn = document.getElementById('nextBtn');
+  const card = track.querySelector('.testimonial-card');
+
+  prevBtn.addEventListener('click', () => {
+    track.scrollBy({ left: -card.offsetWidth - 30, behavior: 'smooth' });
+  });
+
+  nextBtn.addEventListener('click', () => {
+    track.scrollBy({ left: card.offsetWidth + 30, behavior: 'smooth' });
+  });
+
+  let currentIndex = 0; // Mantém o controle globalmente
+
+  function createDots() {
+    // Limpa os dots antigos
+    indicators.innerHTML = "";
+
+    const totalSlides = cards.length;
+    const isWide = window.innerWidth >= 769;
+    const visibleSlides = isWide ? 3 : 1;
+
+    const totalDots = Math.max(totalSlides - visibleSlides + 1, 1);
+
+    for (let i = 0; i < totalDots; i++) {
+      const dot = document.createElement("div");
+      dot.classList.add("dot");
+      if (i === 0) dot.classList.add("active");
+
+      // NÃO cria nova closure a cada resize — usamos currentIndex
+      dot.addEventListener("click", () => {
+        const cardWidth = cards[0].offsetWidth;
+        const gap = parseInt(getComputedStyle(track).gap) || 0;
+        const scrollTo = i * (cardWidth + gap);
+        currentIndex = i; // Atualiza o índice atual global
+        track.scrollTo({ left: scrollTo, behavior: "smooth" });
+      });
+
+      indicators.appendChild(dot);
+    }
+  }
+
+  function updateActiveDot() {
+    const trackRect = track.getBoundingClientRect();
+    let closestIndex = 0;
+    let closestDistance = Infinity;
+
+    cards.forEach((card, index) => {
+      const cardRect = card.getBoundingClientRect();
+      const distance = Math.abs(cardRect.left - trackRect.left);
+      if (distance < closestDistance) {
+        closestIndex = index;
+        closestDistance = distance;
+      }
+    });
+
+    const dots = indicators.querySelectorAll(".dot");
+    dots.forEach((dot, i) => {
+      dot.classList.toggle("active", i === closestIndex);
+    });
+  }
+
+  track.addEventListener("scroll", () => {
+    updateActiveDot();
+  });
+
+  window.addEventListener("resize", () => {
+    createDots();
+  });
+
+  createDots();
+</script>
+
+</body>
+</html>
