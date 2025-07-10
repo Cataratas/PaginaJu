@@ -203,12 +203,6 @@ footer {
     margin-bottom: 2px;
 }
 
-@media (max-width: 768px) {
-    .testimonial-card img {
-        width: 75%;
-    }
-}
-
 .carousel-indicators {
     display: flex;
     justify-content: center;
