@@ -179,6 +179,11 @@ footer {
 @media (max-width: 767px) {
     .testimonial-card {
         width: calc(100% - 40px);     /* ocupa a tela inteira */
+        flex: 0 0 100%;
+        scroll-snap-align: start;
+        scroll-snap-stop: always; /* ← ensures stop only at snap points */
+        position: relative;
+        box-sizing: border-box;
     }
 }
 
@@ -265,7 +270,7 @@ footer {
 }
 
 .price-box {
-    background: linear-gradient(0deg, #400021, 20%, #000 100%);
+    background: linear-gradient(0deg, #210012, 20%, #0c0106 100%);
     border: 2px solid #1a1a1a;
     border-radius: 12px;
     padding: 10px;
@@ -275,21 +280,33 @@ footer {
 .price-label {
     font-size: 2.5rem;
     color: #f0f0f0;
-    margin-bottom: 0;
-    margin-top: 20px;
+    margin: 0;
+}
+
+.price-label-sub {
+    font-size: 1.2rem;
+    color: #f0f0f0;
+    margin: 0;
+    padding-bottom: 15px;
 }
 
 .price-value {
     font-size: 2.5rem;
     font-weight: bold;
-    color: #f0f0f0;
-    margin-bottom: 10px;
+    color: #b80060;
+    margin: 0;
+}
+
+.price-sub-top {
+    font-size: 1.5rem;
+    color: #e1e1e1;
+    margin: 0;
 }
 
 .price-sub {
-    font-size: 0.95rem;
-    color: #aaa;
-    margin-bottom: 20px;
+    font-size: 1rem;
+    color: #e1e1e1;
+    margin: 2px;
 }
 
 .formacao-blocos {
@@ -339,7 +356,8 @@ footer {
 @media (min-width: 768px) {
     .blocos-container {
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
+        gap: 20px;
     }
 
     .bloco {
@@ -397,3 +415,54 @@ footer {
     max-width: 90%;
 }
 
+.price-features {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.price-feature {
+    display: flex;
+    justify-content: normal;
+    gap: 10px;
+    text-align: left;
+    color: #ddd;
+    padding-left: 60px;
+    padding-right: 50px;
+    align-items: center;   /* Align icon to the top */
+}
+
+.check-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+/* ✔ rosa com ícone branco */
+.price-feature.included .check-icon {
+    background: #e360a0;
+    color: white;
+    top: -2px;
+    position: relative;
+}
+
+.price-feature.excluded .excluded-text {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.price-feature.excluded .check-icon {
+    background: #444;
+    color: white;
+    top: -2px;
+    position: relative;
+}
