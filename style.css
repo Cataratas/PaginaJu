@@ -270,7 +270,7 @@ footer {
 }
 
 .price-box {
-    background: linear-gradient(0deg, #210012, 20%, #0c0106 100%);
+    background: linear-gradient(0deg, #210012 0%, #0c0106 100%);
     border: 2px solid #1a1a1a;
     border-radius: 12px;
     padding: 10px;
