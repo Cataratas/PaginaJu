@@ -425,6 +425,7 @@ footer {
 }
 
 .price-feature {
+    list-style: none;
     display: flex;
     justify-content: normal;
     gap: 10px;
