@@ -708,19 +708,20 @@ footer::before {
 
 .faq-answer {
     max-height: 0;
-    opacity: 0;
     overflow: hidden;
-    transition: max-height 0.5s ease, opacity 0.3s ease, padding 0.3s ease;
+    transition: max-height 0.4s ease, opacity 0.3s ease;
+    opacity: 0;
     padding: 0 20px;
     color: #ccc;
     font-size: 0.95rem;
 }
 
 .faq-item.open .faq-answer {
-    max-height: 500px; /* large enough to hold several lines */
+    max-height: 200px;
     opacity: 1;
     padding-bottom: 16px;
 }
+
 .faq-item.open .faq-question {
     background: #0a0a0a;
     border-bottom: 1px solid #444;
@@ -737,3 +738,4 @@ footer::before {
 .faq-item.open .faq-question .icon {
     transform: rotate(180deg);
 }
+
