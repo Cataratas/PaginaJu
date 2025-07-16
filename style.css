@@ -86,20 +86,18 @@ li {
 
 .cta-button {
     display: block;
-    background: #e60073;
+    background: linear-gradient(135deg, #e360a0 0%, #e1338a 100%);
     color: white;
     text-align: center;
     padding: 15px;
-    border-radius: 14px;
+    border-radius: 16px;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     margin: 30px auto;
     width: fit-content;
     max-width: 90%;
-}
-.cta-button:hover {
-    background: #cc0066;
+    box-shadow: 0 6px 16px rgba(255, 0, 128, 0.2);
 }
 
 footer {
@@ -189,6 +187,7 @@ footer::before {
     font-size: 1.2rem;
     line-height: 1.6;
     margin: 0;
+    padding: 0 10px;
 }
 
 .mobile-divider {
@@ -290,6 +289,7 @@ footer::before {
     justify-content: center;
     gap: 8px;
     margin-top: 16px;
+    padding-bottom: 5px;
 }
 
 .carousel-indicators .dot {
@@ -301,7 +301,7 @@ footer::before {
 }
 
 .carousel-indicators .dot.active {
-    background: #e60073;
+    background: #E360A0FF;
 }
 .carousel-wrapper {
     position: relative;
@@ -315,7 +315,7 @@ footer::before {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgb(230, 0, 115);
+    background: #E360A0FF;
     border: none;
     border-radius: 50%;
     width: 44px;
@@ -327,11 +327,6 @@ footer::before {
     z-index: 2;
     transition: background 0.3s ease, transform 0.2s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-.nav-button:hover {
-    background: rgb(204, 0, 102);
-    transform: translateY(-50%) scale(1.1);
 }
 
 .nav-button svg {
@@ -356,7 +351,7 @@ footer::before {
 }
 
 .price-box {
-    background: linear-gradient(0deg, #210012 0%, #0c0106 100%) !important;
+    background: linear-gradient(0deg, #2c0018 0%, #0c0106 100%) !important;
     border: 2px solid #1a1a1a;
     border-radius: 12px;
     padding: 10px;
@@ -403,7 +398,7 @@ footer::before {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 20px;
+    padding: 20px 20px 0;
 }
 
 .bloco {
@@ -453,9 +448,20 @@ footer::before {
 }
 .beneficios-simples {
     text-align: center;
-    background: #0c0106;
+    background: #15000c;
 }
 
+.plans::before {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: linear-gradient(to right, transparent, #e360a0, transparent);
+    margin: 20px auto 15px;
+}
+
+.faq-section::before,
+.formacao-blocos::after,
 .beneficios-simples::before,
 .beneficios-simples::after,
 .line {
@@ -580,4 +586,154 @@ footer::before {
     color: white;
     top: -2px;
     position: relative;
+}
+
+.diferenca-diferenciais {
+    padding: 0 20px 20px;
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.diferenca-diferenciais h2 {
+    color: #f0f0f0;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.6rem;
+}
+
+.diferenca-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    justify-items: center;
+}
+
+.diferenca-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 300px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    width: 80%;
+    font-weight: bold;
+}
+
+.diferenca-icon {
+    font-size: 2rem;
+    background: #e360a0;
+    color: white;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-bottom: 12px;
+    box-shadow: 0 0 6px rgba(230, 0, 115, 0.5);
+}
+
+.diferenca-item p {
+    color: #ddd;
+    font-size: 1rem;
+    margin: 0;
+}
+
+@media (min-width: 600px) {
+    .diferenca-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 900px) {
+    .diferenca-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.faq-section {
+    padding: 0 5px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-section h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.faq {
+    background: #0a0a0a;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-top: 0;
+}
+
+.faq-item {
+    background: #0a0a0a;
+    border: 1px solid #e360a0;
+    padding: 0;
+    overflow: hidden;
+    transition: box-shadow 0.3s;
+}
+
+.faq-item.open {
+    box-shadow: 0 0 12px rgba(227, 96, 160, 0.2);
+}
+
+.faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    color: #f9f9f9;
+    font-size: 1rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.faq-question:hover {
+    background: #222;
+}
+
+.faq-answer {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, opacity 0.3s ease, padding 0.3s ease;
+    padding: 0 20px;
+    color: #ccc;
+    font-size: 0.95rem;
+}
+
+.faq-item.open .faq-answer {
+    max-height: 500px; /* large enough to hold several lines */
+    opacity: 1;
+    padding-bottom: 16px;
+}
+.faq-item.open .faq-question {
+    background: #0a0a0a;
+    border-bottom: 1px solid #444;
+    margin-bottom: 12px;
+}
+
+.faq-question .icon {
+    width: 20px;
+    height: 20px;
+    fill: #e360a0;
+    transition: transform 0.3s;
+}
+
+.faq-item.open .faq-question .icon {
+    transform: rotate(180deg);
 }
