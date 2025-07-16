@@ -178,16 +178,16 @@ footer::before {
     content: " — Seu corpo, seu ritmo, sua vitória.";
     display: block;
     font-size: 1.2rem;
-    font-weight: normal;
+    font-weight: bold;
     margin-top: 8px;
-    color: #ffe0ed;
+    color: #E360A0FF;
 }
 
 .intro-text p {
     font-size: 1.2rem;
     line-height: 1.6;
     margin: 0;
-    padding: 0 10px;
+    padding: 5px 10px;
 }
 
 .mobile-divider {
