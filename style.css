@@ -6,6 +6,39 @@
     height: 60px;
 }
 
+h2 {
+    padding: 10px;
+}
+
+.image-fade-container {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.image-fade-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Gradient overlay */
+.image-fade-container::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40%; /* slightly taller fade */
+    background: linear-gradient(to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.5) 40%,
+    rgba(0, 0, 0, 0.8) 70%,
+    #000 100%
+    );
+    pointer-events: none;
+}
+
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -13,33 +46,26 @@ body {
     color: #f9f9f9;
 }
 
-header {
-    background: linear-gradient(135deg, #0a0a0a, 85%, #8f0049 100%);
-    color: white;
-}
-
 .intro {
     max-width: 950px;
     margin: auto;
     display: flex;
-    flex-direction: row-reverse; /* Faz a imagem ficar à direita no desktop */
+    flex-direction: row;
     align-items: stretch;
     flex-wrap: wrap;
 }
 
 .container {
-    max-width: 1200px;
     margin: auto;
-    padding: 0 20px 30px;
 }
 .section {
-    margin-bottom: 40px;
     text-align: center;
 }
 .section h2 {
     color: #ddd;
     font-size: 1.6rem;
 }
+
 .benefits,
 .faq,
 .bonus,
@@ -48,6 +74,8 @@ header {
     padding: 20px;
     border-radius: 10px;
     text-align: left;
+    max-width: 800px;
+    margin: 0 auto; /* This centers the block horizontally */
 }
 ul {
     padding-left: 20px;
@@ -73,24 +101,64 @@ li {
 .cta-button:hover {
     background: #cc0066;
 }
+
 footer {
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     font-size: 0.9rem;
     color: #888;
+    background: #0a0a0a;
 }
 
+footer::before {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: linear-gradient(to right, transparent, #e360a0, transparent);
+    margin-bottom: 10px;
+}
+
+
+.formacao-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .formacao-wrapper {
+        align-items: center;
+    }
+
+    .intro-photo {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+    .intro-photo img {
+        width: auto;
+        height: 5000px;
+        object-fit: cover;       /* crops the image to fit */
+    }
+
+    .benefits {
+        text-align: center;
+    }
+}
+
+
 .intro-photo {
-    flex: 1;
+    width: 92%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
 }
 
 .intro-photo img {
-    max-width: 350px;
-    height: 520px;
+    max-width: 100%;
+    height: auto;
     object-fit: cover;
     border-radius: 20px;
     align-self: center;
@@ -99,13 +167,13 @@ footer {
 
 .intro-text {
     flex: 2;
-    padding: 40px 30px 0px;
+    padding: 40px 30px;
+    max-width: 800px;
 }
 
 .intro-text h1 {
     font-size: 2.5rem;
     margin: 0 0 10px 0;
-    padding-top: 50px;
 }
 
 .intro-text h1::after {
@@ -120,6 +188,7 @@ footer {
 .intro-text p {
     font-size: 1.2rem;
     line-height: 1.6;
+    margin: 0;
 }
 
 .mobile-divider {
@@ -128,25 +197,16 @@ footer {
 
 @media (max-width: 768px) {
     .intro {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
     .intro-text {
-        padding: 20px;
+        padding: 20px 20px 0 20px;
         text-align: center;
     }
 
     .intro-text h1 {
         padding-top: 0;
-    }
-
-    .intro-photo {
-        padding: 0;
-    }
-
-    .intro-photo img {
-        height: 580px;
-        object-fit: cover;
     }
 }
 .testimonial-track {
@@ -172,7 +232,6 @@ footer {
     text-align: center;
     flex-shrink: 0;
     padding: 20px 20px;
-    margin: 0;        /* remove espaçamentos laterais */
 }
 
 /* Esconde no mobile */
@@ -188,8 +247,30 @@ footer {
 }
 
 @media (min-width: 767px) {
+    .desktop-limit-width {
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+    }
+
+    .testimonial-track {
+        display: flex;
+        gap: 20px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        padding-bottom: 10px; /* optional */
+        width: calc(3 * 360px + 2 * 80px); /* 3 cards + 2 gaps */
+    }
+
     .testimonial-card {
-        width: calc(32% - 40px);     /* ocupa a tela inteira */
+        flex: 0 0 360px;
+        scroll-snap-align: center;
+        background: #1e1e1e;
+        border-radius: 12px;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+        text-align: center;
+        padding: 20px;
     }
 }
 
@@ -198,6 +279,10 @@ footer {
     object-fit: cover;
     border-radius: 10px;
     margin-bottom: 2px;
+}
+
+.testimonials-carousel {
+    padding-top: 1px;
 }
 
 .carousel-indicators {
@@ -222,6 +307,7 @@ footer {
     position: relative;
     display: flex;
     align-items: center;
+    padding: 0 20px 0;
 }
 
 /* Botões laterais bonitos */
@@ -274,7 +360,7 @@ footer {
     border: 2px solid #1a1a1a;
     border-radius: 12px;
     padding: 10px;
-    max-width: 400px;
+    max-width: 375px;
 }
 
 .price-label {
@@ -311,13 +397,13 @@ footer {
 
 .formacao-blocos {
     text-align: center;
-    padding: 30px;
 }
 
 .blocos-container {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding: 20px;
 }
 
 .bloco {
@@ -367,6 +453,29 @@ footer {
 }
 .beneficios-simples {
     text-align: center;
+    background: #0c0106;
+}
+
+.beneficios-simples::before,
+.beneficios-simples::after,
+.line {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: linear-gradient(to right, transparent, #e360a0, transparent);
+    margin: 20px auto 20px;
+}
+
+@media (max-width: 768px) {
+    .intro-photo::before {
+        content: "";
+        display: block;
+        height: 2px;
+        width: 100%;
+        background: linear-gradient(to right, transparent, #e360a0, transparent);
+        margin: 1px auto 20px;
+    }
 }
 
 .beneficios-simples h2 {
@@ -391,6 +500,11 @@ footer {
     position: relative;
     padding-bottom: 25px;
     border-bottom: 1px solid #333;
+}
+
+.beneficio-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
 }
 
 
