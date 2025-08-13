@@ -208,6 +208,24 @@ footer::before {
         padding-top: 0;
     }
 }
+
+.testimonial-img {
+    max-height: 500px;           /* Fixed display height */
+    display: flex;
+    justify-content: center;
+    align-items: center;     /* Center the image vertically */
+    overflow: hidden;        /* Prevent overflow scrollbars */
+    background: #1a1a1a;        /* Optional letterbox background */
+}
+
+.testimonial-img img {
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;     /* Show the full image without cropping */
+}
+
 .testimonial-track {
     display: flex;
     gap: 20px;
@@ -230,7 +248,8 @@ footer::before {
     transition: transform 0.3s ease;
     text-align: center;
     flex-shrink: 0;
-    padding: 20px 20px;
+    padding: 12px 12px;
+    max-height: 650px;
 }
 
 /* Esconde no mobile */
@@ -378,8 +397,24 @@ footer::before {
     margin: 0;
 }
 
-.price-sub-top {
+.price-excluded {
+    text-decoration: line-through;
+    color: #888;
     font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.price-value-sub {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #b80060;
+    margin: 0;
+    margin-top: 2px;
+}
+
+.price-sub-top {
+    font-size: 1.2rem;
     color: #e1e1e1;
     margin: 0;
 }
@@ -387,7 +422,7 @@ footer::before {
 .price-sub {
     font-size: 1rem;
     color: #e1e1e1;
-    margin: 2px;
+    margin: 9px;
 }
 
 .formacao-blocos {
@@ -551,8 +586,8 @@ footer::before {
     gap: 10px;
     text-align: left;
     color: #ddd;
-    padding-left: 60px;
-    padding-right: 50px;
+    padding-left: 40px;
+    padding-right: 30px;
     align-items: center;   /* Align icon to the top */
 }
 
