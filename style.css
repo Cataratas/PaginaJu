@@ -124,6 +124,11 @@ footer::before {
 }
 
 @media (min-width: 768px) {
+    .logo img {
+        height: 120px;
+    }
+
+
     .formacao-wrapper {
         align-items: center;
     }
