@@ -35,7 +35,7 @@
   <section class="section formacao-blocos">
     <div class="formacao-wrapper">
         <div class="intro-text">
-          <p>Olá! Eu sou a Juliane Flores, treinadora a mais de 11 anos.</p>
+          <p>Olá! Eu sou a Juliane Flores, treinadora a mais de 12 anos.</p>
           <p>Durante todo esse tempo ajudo mulheres a criarem o hábito de praticar exercícios físicos de forma saudável, motivadora e segura.</p>
           <p>Minha missão é acreditar que você pode, mesmo quando nem você acredita.</p>
         </div>
@@ -178,51 +178,14 @@
         <div class="logo">
           <img src="./assets/logo.png" alt="Logo" />
         </div>
-        <p class="price-label">Plano Trimestral</p>
-        <p style="margin:0; padding: 4px 4px 18px;">Acompanhamento online</p>
-
-        <ul class="price-features">
-          <li class="price-feature included">
-            <span class="check-icon">✔</span>
-            <span class="excluded-text">3 planilhas de corrida mensais</span>
-          </li>
-          <li class="price-feature included">
-            <span class="check-icon">✔</span>
-            <span class="excluded-text">1 treino funcional para deixar você preparada para correr</span>
-          </li>
-          <li class="price-feature included">
-            <span class="check-icon">✔</span>
-            <span class="excluded-text">Ficha de aquecimento específica para corredoras</span>
-          </li>
-          <li class="price-feature excluded">
-            <span class="check-icon">✖</span>
-            <span class="excluded-text">Cartilha de alongamento</span>
-          </li>
-          <li class="price-feature excluded">
-            <span class="check-icon">✖</span>
-            <span class="excluded-text">Guia alimentar para corredoras</span>
-          </li>
-        </ul>
-
-        <p class="price-excluded">R$ 367,90</p>
-        <p class="price-value">R$ 267,90</p>
-        <p class="price-sub-top">ou</p>
-        <p class="price-value-sub">3x R$ 89,30</p>
-        <a href="#final" class="cta-button">Quero começar agora</a>
-      </div>
-
-      <div class="price-box">
-        <div class="logo">
-          <img src="./assets/logo.png" alt="Logo" />
-        </div>
-        <p class="price-label">Plano Semestral</p>
+        <p class="price-label">Plano Anual</p>
         <p style="padding: 4px; margin:0;">Acompanhamento online</p>
         <p style="padding-bottom: 18px; margin-top:0;">Acesso completo</p>
 
         <ul class="price-features">
           <li class="price-feature included">
             <span class="check-icon">✔</span>
-            <span class="excluded-text">6 planilhas de corrida mensais</span>
+            <span class="excluded-text">12 planilhas de corrida mensais</span>
           </li>
           <li class="price-feature included">
             <span class="check-icon">✔</span>
@@ -236,20 +199,21 @@
             <span class="check-icon">✔</span>
             <span class="excluded-text">Cartilha de alongamento</span>
           </li>
-          <li class="price-feature included">
-            <span class="check-icon">✔</span>
+          <li class="price-feature excluded">
+            <span class="check-icon">✖</span>
             <span class="excluded-text">Guia alimentar para corredoras</span>
           </li>
         </ul>
 
-        <p class="price-excluded">R$ 850,00</p>
-        <p class="price-value">R$ 479,90</p>
+        <p class="price-excluded">R$ 2000,00</p>
+        <p class="price-value">R$ 1800,00</p>
         <p class="price-sub-top">ou</p>
-        <p class="price-value-sub">6x R$ 79,90</p>
-        <a href="#final" class="cta-button">Quero começar agora</a>
+        <p class="price-value-sub">12x R$ 150,00</p>
+        <a href="https://pay.kiwify.com.br/SnssDAQ" class="cta-button">Quero começar agora</a>
       </div>
     </div>
   </section>
+
   <section class="section faq-section">
     <h2 style="margin: 4px; padding-top: 0;">Dúvidas Frequentes</h2>
     <div class="faq">
@@ -315,7 +279,7 @@
 </main>
 
 <footer>
-  <p style="margin: 2px;">&copy; 2025 - Programa de Corrida para Mulheres. Todos os direitos reservados.</p>
+  <p style="margin: 2px;">&copy; 2026 - Programa de Corrida para Mulheres. Todos os direitos reservados.</p>
   <small>Desenvolvido por Bernardo Facchi</small>
 </footer>
 
