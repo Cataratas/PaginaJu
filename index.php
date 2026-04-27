@@ -202,7 +202,7 @@
         <ul class="price-features">
           <li class="price-feature included">
             <span class="check-icon">✔</span>
-            <span class="excluded-text">12 planilhas de corrida mensais</span>
+            <span class="excluded-text">12 planilhas de treino mensais</span>
           </li>
           <li class="price-feature included">
             <span class="check-icon">✔</span>
@@ -216,10 +216,18 @@
             <span class="check-icon">✔</span>
             <span class="excluded-text">Cartilha de alongamento</span>
           </li>
-          <li class="price-feature excluded">
-            <span class="check-icon">✖</span>
-            <span class="excluded-text">Guia alimentar para corredoras</span>
+          <li class="price-feature included">
+            <span class="check-icon">✔</span>
+            <span class="excluded-text">Grupo de apoio no WhatsApp</span>
           </li>
+            <li class="price-feature included">
+                <span class="check-icon">✔</span>
+                <span class="excluded-text">Suporte online por WhatsApp</span>
+            </li>
+            <li class="price-feature included">
+                <span class="check-icon">✔</span>
+                <span class="excluded-text">Treinos presenciais em Chapecó 2 vezes por semana</span>
+            </li>
         </ul>
 
         <p class="price-excluded">R$ 2233,92</p>
