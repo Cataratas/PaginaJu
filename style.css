@@ -216,21 +216,36 @@ footer::before {
 }
 
 .testimonial-img {
+    height: 500px;
     max-height: 500px;           /* Fixed display height */
+    width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;     /* Center the image vertically */
-    overflow: hidden;        /* Prevent overflow scrollbars */
+    align-items: center;     /* Center the image vertically *!*/
+    overflow: hidden;        /* Prevent overflow scrollbars *!*/
     background: #1a1a1a;        /* Optional letterbox background */
+    position: relative;
 }
 
-.testimonial-img img {
-    max-height: 100%;
-    max-width: 100%;
-    width: auto;
-    height: auto;
-    object-fit: contain;     /* Show the full image without cropping */
+.testimonial-img img,
+.testimonial-img video {
+    height: 100%;
+    width: 100%;
+    object-fit: scale-down;
+    object-position: top;
+    display: block;
 }
+
+.play-btn {
+    position: absolute;
+    color: #b80060;
+    font-size: 60px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
 
 .testimonial-track {
     display: flex;

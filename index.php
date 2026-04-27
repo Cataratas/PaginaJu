@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+<script src="js/videos.js"></script>
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -152,8 +153,9 @@
                 <p>Corre para melhorar sua condição de saúde, pois é paciente oncológica há mais de 7 anos.</p>
             </div>
             <div class="testimonial-card">
-                <div class="testimonial-img">
-                    <img src="assets/christiane_bourscheid.jpeg" alt="Cristiane">
+                <div class="testimonial-img" data-video="assets/depoimentos/christiane_video.mp4">
+                    <img src="assets/christiane_bourscheid.jpeg" alt="Christiane">
+                    <span class="play-btn">▶</span>
                 </div>
                 <p style="color:#e84092;"><strong>Cristiane Bourscheid</strong></p>
                 <p>Eliminou 18kg através da corrida e mudanças de hábitos. Completou 2 São Silvestres e se prepara
