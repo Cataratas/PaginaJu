@@ -136,26 +136,43 @@
         </button>
 
         <div class="testimonial-track" id="testimonial-track">
-          <div class="testimonial-card">
-            <div class="testimonial-img">
-              <img src="assets/cris1.jpg" alt="Cristiane">
+            <div class="testimonial-card">
+                <div class="testimonial-img">
+                    <img src="assets/soni_teresinha.jpeg" alt="Soni">
+                </div>
+                <p style="color:#e84092;"><strong>Soni Teresinha Fermiano</strong></p>
+                <p>Iniciou com 56 anos, por conta do luto da perda da mãe. Hoje coleciona conquistas, já completou
+                    ultramaratonas de 24 horas e completará 10 anos correndo no Clube KM.</p>
             </div>
-            <p style="color:#e84092;"><strong>Cristiane Bourscheid</strong></p>
-            <p>“Corrida é o hábito angular que fez várias coisas melhorarem na minha vida.”</p>
-          </div>
+            <div class="testimonial-card">
+                <div class="testimonial-img">
+                    <img src="assets/manuela_seibt.jpeg" alt="Manuela">
+                </div>
+                <p style="color:#e84092;"><strong>Manuela Seibt</strong></p>
+                <p>Corre para melhorar sua condição de saúde, pois é paciente oncológica há mais de 7 anos.</p>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-img">
+                    <img src="assets/christiane_bourscheid.jpeg" alt="Cristiane">
+                </div>
+                <p style="color:#e84092;"><strong>Cristiane Bourscheid</strong></p>
+                <p>Eliminou 18kg através da corrida e mudanças de hábitos. Completou 2 São Silvestres e se prepara
+                    para a 1º meia maratona e busca bater a meta de eliminar 21kg.</p>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-img">
+                    <img src="assets/eliane_silva.jpeg" alt="Eliane">
+                </div>
+                <p style="color:#e84092;"><strong>Eliane Silva</strong></p>
+                <p>Iniciou com o objetivo de emagrecer. Saiu do 0km a campeã geral de 10km. Emagreceu 12kg e segue a
+                    preparação para a 3º meia maratona 21km.</p>
+            </div>
           <div class="testimonial-card">
             <div class="testimonial-img">
               <img src="assets/velnice.jpg" alt="Venilce" />
             </div>
             <p style="color:#e84092;"><strong>Venilce Petroli Provenci</strong></p>
             <p>“As dificuldades da corrida são apenas testes de resistência, mantenha o foco, supere desafios e alcance o pódio da sua vida!”</p>
-          </div>
-          <div class="testimonial-card">
-            <div class="testimonial-img">
-              <img src="assets/saiara.jpg" alt="Saiara" />
-            </div>
-            <p style="color:#e84092;"><strong>Saiara de Oliveira Fontana</strong></p>
-            <p>“Um ano de superação, das dores, do diagnóstico de condromalácia, da nova rotina da faculdade, aliando aos treinos de madrugada para não deixar de fazer. Sou muito grata a você pelo apoio. Correr é tudo para mim, é o que salva a minha saúde mental e o meu motivo para continuar!”</p>
           </div>
         </div>
 
@@ -205,10 +222,10 @@
           </li>
         </ul>
 
-        <p class="price-excluded">R$ 2000,00</p>
+        <p class="price-excluded">R$ 2233,92</p>
         <p class="price-value">R$ 1800,00</p>
         <p class="price-sub-top">ou</p>
-        <p class="price-value-sub">12x R$ 150,00</p>
+        <p class="price-value-sub">12x R$ 186,16</p>
         <a href="https://pay.kiwify.com.br/SnssDAQ" class="cta-button">Quero começar agora</a>
       </div>
     </div>
