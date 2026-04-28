@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const videoSrc = container.getAttribute('data-video');
             container.innerHTML = `
                 <video autoplay controlsList="nodownload noremoteplayback">
-                    <source src="${videoSrc}" type="video/mp4">
+                    <source src="${videoSrc}" type="video/mp4; codecs=hvc1">
                 </video>
                 <span class="play-btn"></span>
                 <div class="controls">
@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
             video.addEventListener("pause", () => {
                 btn.style.opacity = "1";
-                btn.classList.remove("play");
+                btn.classList.remove("play", "loading");
                 btn.classList.add("pause");
             });
             video.addEventListener("waiting", () => {
