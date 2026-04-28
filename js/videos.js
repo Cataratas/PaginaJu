@@ -19,10 +19,9 @@ document.addEventListener('DOMContentLoaded', () => {
             `;
 
             const video = container.querySelector('video');
-            const progress = document.querySelector(".progress");
-            const progressBar = document.querySelector(".progress-bar");
+            const progress = container.querySelector(".progress");
+            const progressBar = container.querySelector(".progress-bar");
             const btn = container.querySelector(".play-btn");
-
             btn.classList.add("play");
 
             video.addEventListener('ended', () => {
