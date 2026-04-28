@@ -66,6 +66,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 btn.classList.remove("loading");
                 btn.style.opacity = "0";
             });
+            btn.addEventListener("click", (e) => {
+                e.stopPropagation();
+
+                if (video.paused) video.play().then(() => {});
+                else video.pause();
+            })
         });
     });
 });

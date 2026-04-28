@@ -267,6 +267,7 @@ footer::before {
     left: 50%;
     transform: translate(-50%, -50%);
     filter: drop-shadow(0 0 4px black);
+    cursor: pointer;
 }
 
 .play-btn.play {
