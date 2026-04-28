@@ -36,8 +36,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 const rect = progressBar.getBoundingClientRect();
                 const clickX = e.clientX - rect.left;
                 const width = rect.width;
-
                 const percent = clickX / width;
+
                 video.currentTime = percent * video.duration;
             });
             video.addEventListener("click", () => {

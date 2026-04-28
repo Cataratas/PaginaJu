@@ -278,7 +278,7 @@ footer::before {
 }
 
 .play-btn.pause {
-    width: 34px;
+    width: 29px;
     height: 34px;
     display: flex;
     justify-content: space-between;
