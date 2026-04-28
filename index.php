@@ -138,16 +138,18 @@
 
         <div class="testimonial-track" id="testimonial-track">
             <div class="testimonial-card">
-                <div class="testimonial-img">
+                <div class="testimonial-img" data-video="assets/depoimentos/soni_video.mp4">
                     <img src="assets/soni_teresinha.jpeg" alt="Soni">
+                    <span class="play-btn">▶</span>
                 </div>
                 <p style="color:#e84092;"><strong>Soni Teresinha Fermiano</strong></p>
                 <p>Iniciou com 56 anos, por conta do luto da perda da mãe. Hoje coleciona conquistas, já completou
                     ultramaratonas de 24 horas e completará 10 anos correndo no Clube KM.</p>
             </div>
             <div class="testimonial-card">
-                <div class="testimonial-img">
+                <div class="testimonial-img" data-video="assets/depoimentos/manuela_video.mp4">
                     <img src="assets/manuela_seibt.jpeg" alt="Manuela">
+                    <span class="play-btn">▶</span>
                 </div>
                 <p style="color:#e84092;"><strong>Manuela Seibt</strong></p>
                 <p>Corre para melhorar sua condição de saúde, pois é paciente oncológica há mais de 7 anos.</p>
@@ -162,20 +164,14 @@
                     para a 1º meia maratona e busca bater a meta de eliminar 21kg.</p>
             </div>
             <div class="testimonial-card">
-                <div class="testimonial-img">
+                <div class="testimonial-img" data-video="assets/depoimentos/eliane_video.mp4">
                     <img src="assets/eliane_silva.jpeg" alt="Eliane">
+                    <span class="play-btn">▶</span>
                 </div>
                 <p style="color:#e84092;"><strong>Eliane Silva</strong></p>
                 <p>Iniciou com o objetivo de emagrecer. Saiu do 0km a campeã geral de 10km. Emagreceu 12kg e segue a
                     preparação para a 3º meia maratona 21km.</p>
             </div>
-          <div class="testimonial-card">
-            <div class="testimonial-img">
-              <img src="assets/velnice.jpg" alt="Venilce" />
-            </div>
-            <p style="color:#e84092;"><strong>Venilce Petroli Provenci</strong></p>
-            <p>“As dificuldades da corrida são apenas testes de resistência, mantenha o foco, supere desafios e alcance o pódio da sua vida!”</p>
-          </div>
         </div>
 
         <button class="nav-button right" id="nextBtn" aria-label="Próximo">
