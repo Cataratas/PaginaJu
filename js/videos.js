@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const progress = container.querySelector(".progress");
             const progressBar = container.querySelector(".progress-bar");
             const btn = container.querySelector(".play-btn");
-            btn.classList.add("play");
+            btn.classList.add("loading");
 
             video.addEventListener('ended', () => {
                 container.innerHTML = originalContent;
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     btn.classList.remove("play", "pause")
                 } else {
                     video.pause();
-                    btn.classList.remove("play")
+                    btn.classList.remove("play", "loading")
                     btn.classList.add("pause")
                 }
             });
@@ -56,6 +56,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 btn.style.opacity = "1";
                 btn.classList.remove("play");
                 btn.classList.add("pause");
+            });
+            video.addEventListener("waiting", () => {
+                btn.classList.remove("play", "pause");
+                btn.classList.add("loading");
+                btn.style.opacity = "1";
+            });
+            video.addEventListener("playing", () => {
+                btn.classList.remove("loading");
+                btn.style.opacity = "0";
             });
         });
     });
