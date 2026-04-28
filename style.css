@@ -236,17 +236,61 @@ footer::before {
     display: block;
 }
 
-.play-btn {
+.controls {
     position: absolute;
-    color: #E360A0FF;
-    font-size: 60px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    pointer-events: none;
-    /*-webkit-text-stroke: 2px #E360A0FF;b80060*/
+    bottom: 0;
+    left: 10%;
+    width: 80%;
+    background: linear-gradient(to top, rgba(0,0,0,0.85), transparent);
 }
 
+/* bar background */
+.progress-bar {
+    width: 100%;
+    height: 6px;
+    background: rgba(255,255,255,0.15);
+    border-radius: 3px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+/* progress fill */
+.progress {
+    width: 0%;
+    height: 100%;
+    background: #E360A0;
+}
+
+.play-btn {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: drop-shadow(0 0 4px black);
+}
+
+.play-btn.play {
+    width: 0;
+    height: 0;
+    border-left: 34px solid #E360A0;
+    border-top: 19px solid transparent;
+    border-bottom: 19px solid transparent;
+}
+
+.play-btn.pause {
+    width: 34px;
+    height: 34px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.play-btn.pause::before,
+.play-btn.pause::after {
+    content: "";
+    width: 10px;
+    height: 100%;
+    background: #E360A0;
+}
 
 .testimonial-track {
     display: flex;
