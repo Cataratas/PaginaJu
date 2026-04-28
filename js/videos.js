@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const videoSrc = container.getAttribute('data-video');
             container.innerHTML = `
                 <video autoplay controlsList="nodownload noremoteplayback">
-                    <source src="${videoSrc}" type="video/mp4; codecs=hvc1">
+                    <source src="${videoSrc}" type="video/mp4">
                 </video>
                 <span class="play-btn"></span>
                 <div class="controls">
