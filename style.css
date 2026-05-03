@@ -215,15 +215,26 @@ footer::before {
     }
 }
 
+.video-intro {
+    overflow: hidden;
+    max-height: 500px;
+    justify-content: center;
+    object-fit: scale-down;
+    height: 100%;
+    width: 100%;
+    object-position: top;
+    display: block;
+}
+
 .testimonial-img {
     height: 500px;
-    max-height: 500px;           /* Fixed display height */
+    max-height: 500px;
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;     /* Center the image vertically *!*/
-    overflow: hidden;        /* Prevent overflow scrollbars *!*/
-    background: #1a1a1a;        /* Optional letterbox background */
+    align-items: center;
+    overflow: hidden;
+    background: #1a1a1a;
     position: relative;
 }
 
@@ -529,6 +540,7 @@ footer::before {
     flex-direction: column;
     gap: 20px;
     padding: 20px 20px 0;
+    align-items: center;
 }
 
 .bloco {
