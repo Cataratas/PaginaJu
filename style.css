@@ -325,10 +325,8 @@ footer::before {
 .play-btn.loading {
     width: 36px;
     height: 36px;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+
+    transform: translate(calc(-50% - 8px), -50%);
 }
 
 /* spinner is inside */
