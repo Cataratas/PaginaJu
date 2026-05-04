@@ -621,6 +621,11 @@ footer::before {
     border-radius:50%; display:flex; align-items:center;
     justify-content:center; text-decoration:none;
 }
+.whatsapp img {
+    scale: 50%;
+}
+
+
 .logo::after,
 .intro-photo::before,
 .faq-section::before,
