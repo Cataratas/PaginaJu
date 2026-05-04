@@ -310,6 +310,11 @@
   <small>Desenvolvido por Bernardo Facchi</small>
 </footer>
 
+<a class="whatsapp" href="https://wa.me/5599999999999" target="_blank">
+    <img src="./assets/whatsapp-32.ico" alt="whatsapp_logo" />
+</a>
+
+
 <script>
   const track = document.getElementById('testimonial-track');
   const indicators = document.getElementById('carousel-indicators');
@@ -333,10 +338,9 @@
     track.scrollBy({ left: card.offsetWidth + 30, behavior: 'smooth' });
   });
 
-  let currentIndex = 0; // Mantém o controle globalmente
+  let currentIndex = 0;
 
   function createDots() {
-    // Limpa os dots antigos
     indicators.innerHTML = "";
 
     const totalSlides = cards.length;
@@ -350,12 +354,11 @@
       dot.classList.add("dot");
       if (i === 0) dot.classList.add("active");
 
-      // NÃO cria nova closure a cada resize — usamos currentIndex
       dot.addEventListener("click", () => {
         const cardWidth = cards[0].offsetWidth;
         const gap = parseInt(getComputedStyle(track).gap) || 0;
         const scrollTo = i * (cardWidth + gap);
-        currentIndex = i; // Atualiza o índice atual global
+        currentIndex = i;
         track.scrollTo({ left: scrollTo, behavior: "smooth" });
       });
 

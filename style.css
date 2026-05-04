@@ -615,6 +615,12 @@ footer::before {
     background: #15000c;
 }
 
+.whatsapp{
+    position:fixed; bottom:20px; right:20px;
+    background:#25D366; width:60px; height:60px;
+    border-radius:50%; display:flex; align-items:center;
+    justify-content:center; text-decoration:none;
+}
 
 .logo::after,
 .intro-photo::before,
