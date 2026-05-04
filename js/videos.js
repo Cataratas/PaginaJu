@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    document.querySelectorAll('.testimonial-img').forEach(container => {
+    document.querySelectorAll('.testimonial-img, .video-intro').forEach(container => {
         const originalContent = container.innerHTML;
 
         container.addEventListener('click', () => {

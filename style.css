@@ -158,15 +158,45 @@ footer::before {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 
-.intro-photo img {
+.intro-photo img,
+.intro-photo video {
     max-width: 100%;
     height: auto;
     object-fit: cover;
     border-radius: 20px;
     align-self: center;
     border: 2px solid #1a1a1a;
+}
+
+.video-intro {
+    overflow: hidden;
+    justify-content: center;
+    align-self: center;
+    display: block;
+    max-width: 100%;
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.video-intro img {
+    scale: 130%;
+}
+
+.video-intro img,
+.video-intro video {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 16 / 9;
+    object-position: bottom;
+    display: block;
+}
+
+.video-intro span {
+    scale: 75%;
 }
 
 .intro-text {
@@ -215,17 +245,6 @@ footer::before {
     }
 }
 
-.video-intro {
-    overflow: hidden;
-    max-height: 500px;
-    justify-content: center;
-    object-fit: scale-down;
-    height: 100%;
-    width: 100%;
-    object-position: top;
-    display: block;
-}
-
 .testimonial-img {
     height: 500px;
     max-height: 500px;
@@ -250,8 +269,7 @@ footer::before {
 .controls {
     position: absolute;
     bottom: 0;
-    left: 10%;
-    width: 80%;
+    width: 100%;
     background: linear-gradient(to top, rgba(0,0,0,0.85), transparent);
 }
 
@@ -435,7 +453,6 @@ footer::before {
     padding: 0 20px 0;
 }
 
-/* Botões laterais bonitos */
 .nav-button {
     position: absolute;
     top: 50%;
@@ -455,8 +472,8 @@ footer::before {
 }
 
 .nav-button svg {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     fill: white;
 }
 
@@ -602,6 +619,7 @@ footer::before {
     margin: 20px auto 15px;
 }
 
+.intro-text::after,
 .faq-section::before,
 .formacao-blocos::after,
 .beneficios-simples::before,
