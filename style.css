@@ -567,7 +567,7 @@ footer::before {
 
 .bloco {
     background: linear-gradient(145deg, #1f1f1f, #141414);
-    border: 2px solid rgba(227, 96, 160, 0.15);
+    border: 2px solid #1a1a1a;
     border-radius: 12px;
     padding: 25px 20px;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
@@ -768,7 +768,7 @@ footer::before {
     border-radius: 14px;
 
     background: linear-gradient(145deg, #1f1f1f, #141414);
-    border: 2px solid rgba(227, 96, 160, 0.15);
+    border: 2px solid #1a1a1a;
 
     width: 80%;
     max-width: 420px;
