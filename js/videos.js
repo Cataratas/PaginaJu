@@ -5,12 +5,12 @@ document.addEventListener('DOMContentLoaded', () => {
         container.addEventListener('click', () => {
             if (container.querySelector('video')) return;
 
-            const src_h264 = container.getAttribute('video-h264');
-            const src_av1 = container.getAttribute('video-av1');
+            const src_h264 = container.dataset.videoH264;
+            const src_av1 = container.dataset.videoAv1;
             container.innerHTML = `
                 <video autoplay controlsList="nodownload noremoteplayback">
-                    <source src="${src_av1}" type='video/mp4;'>
-                    <source src="${src_h264}" type='video/mp4;'>
+                    <source src="${src_av1}" type='video/webm'>
+                    <source src="${src_h264}" type='video/mp4'>
                 </video>
                 <span class="play-btn"></span>
                 <div class="controls">
